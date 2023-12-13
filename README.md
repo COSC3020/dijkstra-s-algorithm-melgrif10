@@ -20,3 +20,5 @@ to be the most efficient one!
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The big $\Theta$ complexity of the djkstra's algorithm implementation can be determined by analyzing each step. The initalization of the distances and unvisited vertices+ to infinity each take O(|V|) time. Initializing the distance and source to 0 take O(1). The while loop iterates through all the vertices in the graph which takes O(|V|). Selecting the shortest distance to an unvisted vertex take O(|V|). Marking the vertex with distance dist take O(1). Going through each edge to find its distance from the source node is O(|E|). Therefore the big $\Theta$ = $\Theta$(|V|+|E|+|V|*|V|)=$\Theta(|E|+|V|^2)$. 
