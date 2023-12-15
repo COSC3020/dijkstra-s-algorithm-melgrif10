@@ -20,7 +20,7 @@ const test = jsc.forall(jsc.dict(jsc.array(storeValues(jsc.nat, jsc.nat))), func
     const vertices = Object.keys(graph);    //Used to retrieve an array containg all the "keys"       
     const source = vertices[Math.floor(Math.random()*vertices.length)];     //Choose a random source vertex 
     const result = dijkstra(graph, source); //Run Dijkstra's algorithm
-    const Distances = Object.values(result).every(distance => distance<=0); //Check if the distances are <= 0
+    const Distances = Object.values(result).every(distance => distance<=0); //Retrieves result array and tests if all the elements in the array is less than or equal to zero
     
     return Distances;   //Return the distance
 });
