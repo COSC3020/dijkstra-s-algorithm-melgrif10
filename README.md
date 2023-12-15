@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13164466&assignment_repo_type=AssignmentRepo)
 # Dijkstra's Algorithm
 
 Recall the pseudocode for Dijkstra's algorithm:
@@ -19,3 +20,5 @@ to be the most efficient one!
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+The big $\Theta$ complexity of the djkstra's algorithm implementation can be determined by analyzing each step. The initalization of the distances and unvisited vertices+ to infinity each take O(|V|) time. Initializing the distance and source to 0 take O(1). The while loop iterates through all the vertices in the graph which takes O(|V|). Selecting the shortest distance to an unvisted vertex take O(|V|). Marking the vertex with distance dist take O(1). Going through each edge to find its distance from the source node is O(|E|). Therefore the big $\Theta$ = $\Theta$(|V|+|E|+|V|*|V|)=$\Theta(|E|+|V|^2)$. 
